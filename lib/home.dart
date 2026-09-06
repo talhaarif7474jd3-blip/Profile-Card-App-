@@ -9,7 +9,17 @@ class Home extends StatelessWidget {
         title: Text("Talha arif"),
         backgroundColor: Colors.amber,
       ),
-      body: Center(child: Text("how are you")),
+      body: Column(
+        children: [
+          Center(
+            child: Container(
+              width: 45,
+              height: 45,
+              color: Colors.red,
+            ),
+          )
+        ],
+      )
     );
   }
 }
