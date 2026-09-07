@@ -1,25 +1,21 @@
 import 'package:flutter/material.dart';
-class Home extends StatelessWidget {
-  const Home({super.key});
 
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Talha arif"),
-        backgroundColor: Colors.amber,
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Meri Pehli App'),
+        ),
+        body: Center(
+          child: Text('Assalam o Alaikum!'),
+        ),
       ),
-      body: Column(
-        children: [
-          Center(
-            child: Container(
-              width: 45,
-              height: 45,
-              color: Colors.red,
-            ),
-          )
-        ],
-      )
     );
   }
 }
